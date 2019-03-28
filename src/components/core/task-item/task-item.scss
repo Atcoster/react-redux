@@ -1,0 +1,42 @@
+@import '../../../scss/abstracts/variables/colors';
+
+.task {
+	display: flex;
+	width: 100%;
+	padding: 0.5vw;
+	color: $blue--light;
+	justify-content: space-between;
+
+	&:nth-child(odd) {
+		background-color: $blue--light;
+		color: $white;
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+		margin-right: 0.5rem;
+		&-input {
+			margin: 0;
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+
+		&--striked {
+			text-decoration: line-through;
+		}
+	}
+
+	&__delete {
+		background-color: $red;
+		padding: 0.3rem 0.5rem;
+		color: $white;
+		border-radius: 0.2rem;
+		box-shadow: 0.1rem 0.1rem $gray--dark;
+	}
+}

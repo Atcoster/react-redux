@@ -1,25 +1,38 @@
 {
-  "name": "react-redux",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "reactredux",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.17",
+		"@fortawesome/free-solid-svg-icons": "^5.8.1",
+		"@fortawesome/react-fontawesome": "^0.1.4",
+		"@types/uuid": "^3.4.4",
+		"node-sass": "^4.11.0",
+		"react": "^16.8.4",
+		"react-dom": "^16.8.4",
+		"react-redux": "^6.0.1",
+		"react-scripts": "2.1.8",
+		"redux-saga": "^1.0.2",
+		"redux-starter-kit": "^0.4.3",
+		"typescript": "^3.3.3333",
+		"uuid": "^3.3.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"devDependencies": {
+		"@types/react-redux": "^7.0.5"
+	}
 }

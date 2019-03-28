@@ -1,0 +1,97 @@
+@import '../../../scss/abstracts/variables/colors';
+
+$icon: '.button__icon';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+	color: $white;
+
+	&:disabled {
+		cursor: not-allowed;
+		background-color: $gray;
+	}
+
+	// Button Colors (Type)
+	&--primary {
+		background-color: $blue--light;
+	}
+
+	&--warning {
+		background-color: $orange;
+	}
+
+	&--danger {
+		background-color: $red;
+	}
+
+	&--success {
+		background-color: $green--light;
+	}
+
+	//Button Width
+	&--small {
+		width: 10%;
+	}
+
+	&--medium {
+		width: 25%;
+	}
+
+	&--large {
+		width: 50%;
+	}
+
+	&--full {
+		width: 100%;
+	}
+
+	// BUTTON SHAPES
+	&--radius {
+		border-radius: 0.3rem;
+	}
+
+	&--circle {
+		border-radius: 50%;
+	}
+
+	// ICON POSITION
+	&--top {
+		flex-direction: column-reverse;
+
+		#{$icon} {
+			margin-bottom: 0.3rem;
+		}
+	}
+
+	&--bottom {
+		flex-direction: column;
+
+		#{$icon} {
+			margin-top: 0.3rem;
+		}
+	}
+
+	&--center {
+		#{$icon} {
+			margin: 0;
+		}
+	}
+
+	&--right {
+		flex-direction: row;
+		#{$icon} {
+			margin-left: 0.3rem;
+		}
+	}
+
+	&--left {
+		flex-direction: row-reverse;
+
+		#{$icon} {
+			margin-right: 0.3rem;
+		}
+	}
+}
